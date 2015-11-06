@@ -2205,6 +2205,8 @@ handleTech( const char*  cmd, AModem  modem )
         }
 
         amodem_reply( modem, "+CTEC: DONE" );
+        amodem_set_voice_registration(modem, A_REGISTRATION_HOME);
+        amodem_set_data_registration(modem, A_REGISTRATION_HOME);
         return;
     }
 
